@@ -63,8 +63,123 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# MERN To-Do List App
 
-### `npm run build` fails to minify
+This is a full-stack To-Do List application built with the MERN stack (MongoDB, Express.js, React, Node.js). The app allows users to add, complete, and remove tasks, with all data stored in a MongoDB database.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Features
+
+- Add new tasks
+- Mark tasks as complete
+- Remove tasks
+- Persistent storage with MongoDB
+
+## Prerequisites
+
+Make sure you have the following installed on your local development machine:
+
+- Node.js
+- npm (Node Package Manager)
+- MongoDB (or use MongoDB Atlas for a cloud-based solution)
+
+## Installation
+
+### Backend Setup
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/your-repository.git
+   cd your-repository
+Navigate to the server directory:
+
+
+cd server
+Install backend dependencies:
+
+
+npm install
+Create a .env file in the server directory and add your MongoDB connection string:
+
+env
+Kopiera kod
+MONGODB_URI=your_mongodb_connection_string
+Start the backend server:
+
+
+node index.js
+Frontend Setup
+Navigate to the client directory:
+
+
+
+cd ../client
+Install frontend dependencies:
+
+
+Kopiera kod
+npm install
+Start the React development server:
+
+
+npm start
+Usage
+Open your web browser and navigate to http://localhost:3000.
+Use the interface to add, complete, and remove tasks.
+Project Structure
+java
+my-app/
+├── public/
+│   ├── background.jpg
+│   ├── index.html
+│   └── ...
+├── server/
+│   ├── index.js
+│   ├── .env
+│   └── ...
+├── client/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── TodoForm.js
+│   │   │   ├── TodoItem.js
+│   │   │   └── TodoList.js
+│   │   ├── App.css
+│   │   ├── App.js
+│   │   ├── index.css
+│   │   └── index.js
+│   ├── public/
+│   ├── package.json
+│   └── ...
+├── .gitignore
+├── package.json
+└── README.md
+API Endpoints
+Get All Todos
+URL: /todos
+Method: GET
+Description: Retrieve all to-do items.
+Response: JSON array of to-do items.
+Add a New Todo
+URL: /todos
+Method: POST
+Description: Add a new to-do item.
+Body: JSON object with a text property.
+Response: JSON object of the created to-do item.
+Update a Todo
+URL: /todos/:id
+Method: PATCH
+Description: Update a to-do item by ID.
+Body: JSON object with an isCompleted property.
+Response: JSON object of the updated to-do item.
+Delete a Todo
+URL: /todos/:id
+Method: DELETE
+Description: Delete a to-do item by ID.
+Response: JSON object of the deleted to-do item.
+Contributing
+Fork the repository.
+Create a new branch (git checkout -b feature-branch).
+Make your changes and commit them (git commit -m 'Add new feature').
+Push to the branch (git push origin feature-branch).
+Create a new Pull Request.
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
