@@ -88,8 +88,8 @@ Make sure you have the following installed on your local development machine:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/your-repository.git
-   cd your-repository
+   git clone https://github.com/simm99/to-do-list-react.git
+   cd to-do-list-react
 Navigate to the server directory:
 
 
@@ -116,7 +116,6 @@ cd ../client
 Install frontend dependencies:
 
 
-Kopiera kod
 npm install
 Start the React development server:
 
